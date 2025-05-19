@@ -32,3 +32,149 @@
 .boton-subir:hover {
   background-color: #45a049;
 }
+
+.modal-imagen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contenido-modal {
+  max-width: 90%;
+  max-height: 90%;
+  position: relative;
+}
+
+.imagen-ampliada {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.controles-imagen {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.boton-descargar, 
+.boton-eliminar,
+.boton-cerrar {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #878787;
+  cursor: pointer;
+  font-weight: bold;
+  background: none;
+  display: flex;
+  align-items: center;
+  border: 2px solid #878787;
+  border-radius: 20px;
+}
+
+svg{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.boton-descargar {
+  background-color: #4caf4f00;
+
+}
+
+.boton-eliminar {
+  background-color: #f4433600;
+
+}
+
+.boton-cerrar {
+  background-color: #2195f300;
+
+}
+
+.boton-descargar:hover {
+  border: 2px solid white;
+  color: white;
+
+}
+
+.boton-eliminar:hover {
+  border: 2px solid white;
+  color: white;
+}
+
+.boton-cerrar:hover {
+ border: 2px solid white;
+  color: white;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.contenedor-imagen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1 / 1; 
+}
+
+.imagen-cuadricula {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.imagen-cuadricula:hover {
+  transform: scale(1.03);
+}
+
+.modal-imagen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contenido-modal {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-ampliada {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.controles-imagen {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
